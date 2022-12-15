@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1027</width>
+    <height>745</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Password Random Generator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*Copyright (c) DevSec Studio. All rights reserved.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/*-----QWidget-----*/
+QWidget
+{
+	background-color: #4158D0;
+	color: #ffffff;
+	border-color: #181c21;
+	padding:20px
+}
+
+
+/*-----QMenuBar-----*/
+QMenuBar
+{
+	background-color: #6692fc;
+	color: #fff;
+	border-color: #181c21;
+
+}
+
+
+QMenuBar::item
+{
+    background-color: transparent;
+
+}
+
+
+QMenuBar::item:selected
+{
+    background-color: #4158D0;
+
+}
+
+
+QMenuBar::item:pressed
+{
+    background-color: #4158D0;
+    border: 1px solid #5ab8a0;
+    margin-bottom: -1px;
+    padding-bottom: 1px;
+
+}
+
+
+/*-----QMenu-----*/
+QMenu
+{
+    background-color: #e1f4ff;
+    border: 1px solid;
+    color: #000;
+
+}
+
+
+QMenu::separator
+{
+    height: 1px;
+    background-color: #000;
+    color: #ffffff;
+    padding-left: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
+
+QMenu::item
+{
+    min-width : 150px;
+    padding: 3px 20px 3px 20px;
+
+}
+
+
+QMenu::item:selected
+{
+    background-color: #3a76b4;
+    color: #ffffff;
+
+}
+
+
+QMenu::item:disabled
+{
+    color: #262626;
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: #C850C0;
+	color: white;
+	border-style: solid;
+	border-color: #181c21;
+	border-radius:5px;
+	font-weight: bold;
+	padding:7px;
+	font-size: 18px;
+	font-family: Arial;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #E64AD7;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #E64AD7;
+
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #C850C0;
+	color: white;
+	border-radius:5px;
+	padding: 3px;
+	font-size:18px;
+}
+ QTabWidget::tab-bar {
+ background-color: black;
+}
+
+QTabBar::tab {
+    background-color: #C850C0;
+    border-color:white;
+    font: bold 12px 'Arial';
+    color: white;
+    height:20px;
+	width:150px;
+	padding:10px;
+	border-radius:5px;
+}
+QTabBar::tab:!selected {
+    background-color: #C850C0;
+    color: white;
+ }
+
+
+QTabBar::close-button {
+    background-position: center;
+    background-image: url(&quot;:/Appearance/close_chat_item&quot;);
+}
+
+ QTabWidget::pane { 
+     position: absolute;
+ }
+
+QTabBar::tab:selected {
+    border-color:#4094da;
+    background-color: #E64AD7;
+    color: white;
+}
+QLabel{
+text-align:center;
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pass_btn">
+      <property name="text">
+       <string>Change Password</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Length</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="leng"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="out">
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_clear">
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
